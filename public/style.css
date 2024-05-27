@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f4f1ea;
+}
+
 .top-nav {
     position: relative;
-    background-color: whitesmoke;
-    border-bottom: 1px solid gray;
+    background-color: #f4f1ea;
+    border-bottom: 3px solid black;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     padding: 0.5rem 0;
+    margin: 0 0 2rem 0;
 }
 
 .nav-container {
@@ -37,4 +42,60 @@
 .nav-container a:hover {
     background-color: lightgray;
     color: gray;
+}
+
+.page-wrapper {
+    padding: 0 3rem;
+    margin: 0 5rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-wrapper {
+    padding: 5vw 0;
+    height: auto;
+    width: 100%;
+    border-bottom: 3px solid black;
+}
+
+.hero-div {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 5rem;
+}
+
+.hero-div h1 {
+    font-family: "Bebas Neue", sans-serif;
+    height: fit-content;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5vw;
+    line-height: 1.4;
+    justify-self: center;
+}
+
+.hero-div h1:nth-child(1) {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    text-decoration: underline;
+}
+
+.hero-div h1:nth-child(2) {
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+    background-color: #fdff32;
+    padding: 0 1vw;
+}
+
+.hero-div h1:nth-child(3) {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    background-color: #abff32;
+    padding: 0 1vw;
 }
