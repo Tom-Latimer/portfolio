@@ -44,6 +44,16 @@ body {
     color: gray;
 }
 
+.section {
+    padding: 20px;
+    margin: 20px;
+}
+.resume-section, .project-section, .contact-section {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
 .page-wrapper {
     padding: 0 3rem;
     margin: 0 5rem;
