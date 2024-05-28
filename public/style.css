@@ -6,7 +6,10 @@
 
 body {
     background-color: #f4f1ea;
+    font-family: "Barlow", sans-serif;
 }
+
+/*Nav bar*/
 
 .top-nav {
     position: relative;
@@ -44,23 +47,21 @@ body {
     color: gray;
 }
 
+/* Hero Banner */
+
 .page-wrapper {
     padding: 0 3rem;
     margin: 0 5rem;
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .hero-wrapper {
     padding: 5vw 0;
     height: auto;
     width: 100%;
-    border-bottom: 3px solid black;
 }
 
 .hero-div {
@@ -71,12 +72,12 @@ body {
 }
 
 .hero-div h1 {
-    font-family: "Bebas Neue", sans-serif;
     height: fit-content;
-    font-weight: 400;
+    font-weight: 600;
     font-style: normal;
-    font-size: 5vw;
+    font-size:3vw;
     line-height: 1.4;
+    text-transform: uppercase;
     justify-self: center;
 }
 
@@ -84,6 +85,7 @@ body {
     grid-row: 1 / span 1;
     grid-column: 1 / span 1;
     text-decoration: underline;
+    white-space: nowrap;
 }
 
 .hero-div h1:nth-child(2) {
@@ -98,4 +100,127 @@ body {
     grid-column: 2 / span 1;
     background-color: #abff32;
     padding: 0 1vw;
+}
+
+/* Resume Section */
+.section-container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    width: 100%;
+    border-top: 3px solid black;
+    padding: 2vw 0;
+}
+
+@media screen and (max-width: 600px) {
+    .section-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 3px solid black;
+}
+
+.description {
+    margin-top: 15vw;
+}
+
+.description-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.resume-container {
+    padding: 0 5rem;
+}
+
+.resume-content {
+    aspect-ratio: 8.5 / 11;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* Tom Resume */
+
+.tom-resume-container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 15% 85%;
+    padding: 2.5em;
+    font-size: 10px;
+    width: fit-content;
+}
+
+
+.header-line {
+    grid-row: 1/ span 1;
+    grid-column: 1/span 2;
+}
+
+.header-line > h1 {
+    color:blue;
+    margin-bottom: 1em;
+}
+
+.header-line > h3 {
+    color: gray;
+}
+
+.left-box {
+    grid-row: 2/span 1;
+    grid-column: 1/span 1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    overflow: hidden;
+}
+
+.right-box {
+    grid-row: 2/ span 1;
+    grid-column: 2/span 1;
+}
+
+.l-content {
+    margin-bottom: 2em;
+    height: fit-content;
+}
+
+.l-content > h3 {
+    color: black;
+    margin-bottom: 0.5em;
+}
+
+.l-content > h4 {
+    color: gray;
+    padding-bottom: 0.5em;
+}
+.l-content > ul {
+    padding-left: 4em;
+}
+
+.subtitle {
+    color: blue;
+    margin-bottom: 0.7em;
+}
+
+.r-content {
+    margin-bottom: 1em;
+}
+
+.r-content > h4 {
+    color: gray;
+    margin-bottom: 0.5em;
+}
+
+.r-content > ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.r-content > h5 {
+    margin-bottom: 0.4em;
+    margin-left: 0.4em;
 }
