@@ -53,7 +53,8 @@ body {
 
 .nav-container a {
     text-decoration: none;
-    color: gray;
+    font-weight: 500;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +65,8 @@ body {
 }
 
 .nav-container a:hover {
-    background-color: lightgray;
-    color: gray;
+    background-color: #d9d6cf;
+    color: #646464;
 }
 
 /* Hero Banner */
