@@ -165,7 +165,7 @@ body {
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: min-content auto;
-    column-gap: 2.5em;
+    column-gap: 2em;
     padding: 2.5em;
     font-size: 16px;
     width: fit-content;
@@ -249,14 +249,18 @@ body {
     margin-left: 0.4em;
 }
 
-.resume-section > ul {
+.resume-section > ul, .resume-section > p {
     font-family: "Inter", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-variation-settings:
         "slnt" 0;
-    padding-left: 3em;
     line-height: 1.3;
+    font-size: 0.8em;
+}
+
+.resume-section > ul {
+    padding-left: 3em;
 }
 
 .subtitle {
