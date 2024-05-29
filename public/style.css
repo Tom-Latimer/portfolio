@@ -145,10 +145,15 @@ body {
 }
 
 .description-container h1 {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 600;
+    margin-bottom: 1.5rem;
 }
 
+.description-container p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
 /* Resume Content */
 
 .resume-container {
