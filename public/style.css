@@ -302,7 +302,6 @@ body {
     align-items: center;
     width: 100%;
     padding: 2vw 0;
-    background-color: #f0f0f0;
     margin-top: 2rem;
 }
 
@@ -315,6 +314,7 @@ body {
 
 #project-section .description {
     text-align: center;
+    margin-top: 5vw;
 }
 
 #project-section .description-container h1 {
